@@ -1,0 +1,46 @@
+/* .card {
+    width: 20rem;
+} */
+.card-body {
+    position: relative;
+}
+
+.card-body .mainDiv {
+    display: flex;
+    /* justify-content: ; */
+}
+
+.card-body .div1 {
+    width: 50%;
+}
+
+.card-body .div2 {
+    width: 50%;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.card-body button {
+    padding: 20px !important;
+    border-radius: 100px !important;
+    position: absolute;
+    top: 115px;
+    left: 46%;
+    font-size: 30px !important;
+}
+
+.modal-content {
+    background: rgba(5, 1, 1, 0.3) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* .modal-dialog {
+    
+} */
