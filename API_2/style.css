@@ -1,35 +1,76 @@
-/* .card {
-    width: 20rem;
-} */
-.card-body {
+.container-fluid {
+    background-image: url("football2.jpg");
+    background-size: 100%;
+}
+
+.container-fluid .row .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-fluid .row .col .card {
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border: none;
+}
+
+.container-fluid .row .col .card .card-header {
+    font-size: 22px;
+    background: rgb(37, 13, 22);
+    background: radial-gradient(circle, rgba(37, 13, 22, 1) 0%, rgba(53, 96, 167, 1) 100%);
+}
+
+.container-fluid .row .col .card .card-footer {
+    background: rgb(37, 13, 22);
+    background: radial-gradient(circle, rgba(37, 13, 22, 1) 0%, rgba(53, 96, 167, 1) 100%);
+}
+
+.container-fluid .row .col .card .card-body {
     position: relative;
 }
 
-.card-body .mainDiv {
+.container-fluid .row .col .card .card-body .mainDiv {
     display: flex;
-    /* justify-content: ; */
 }
 
-.card-body .div1 {
+.container-fluid .row .col .card .card-body .div1 {
     width: 50%;
+    background-image: linear-gradient(to left top, #434645, #53615c, #647d73, #769a8a, #89b8a1, #73bda8, #53c2b5, #00c7c6, #00afe0, #0091ff, #0069ff, #3816e5);
 }
 
-.card-body .div2 {
+.container-fluid .row .col .card .card-body .div2 {
     width: 50%;
+    background-image: linear-gradient(to right bottom, #434645, #53615c, #647d73, #769a8a, #89b8a1, #73bda8, #53c2b5, #00c7c6, #00afe0, #0091ff, #0069ff, #3816e5);
 }
 
-img {
+.container-fluid .row .col .card .card-body img {
     width: 200px;
     height: 200px;
 }
 
-.card-body button {
+.container-fluid .row .col .card .card-body .btn {
     padding: 20px !important;
-    border-radius: 100px !important;
+    color: white;
     position: absolute;
-    top: 115px;
-    left: 46%;
-    font-size: 30px !important;
+    top: 120px;
+    left: 41.8%;
+    font-size: 25px !important;
+    background: rgba(6, 0, 0, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container-fluid .row .col .card .card-body .btn:hover {
+    background: rgba(6, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .modal-content {
@@ -41,6 +82,15 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-/* .modal-dialog {
-    
-} */
+.modal-content .modal-header .modal-title {
+    margin: auto;
+}
+
+.contents {
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+.modal-footer {
+    font-size: 20px;
+}

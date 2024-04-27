@@ -1,0 +1,43 @@
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header {
+    height: 100px;
+    padding: 0px !important;
+}
+
+.card .card-body {
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+img {
+
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 100px !important;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+
+.triangle-top-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid blue;
+    border-left: 50px solid transparent;
+    float: right;
+    /* background-color: blue; */
+}
+
+.triangle-top-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid #333;
+    border-right: 50px solid transparent;
+    float: left;
+}
