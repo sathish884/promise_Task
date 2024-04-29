@@ -29,7 +29,7 @@
         crossorigin="anonymous"></script>
 
 
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row">
             <div class="col p-5">
@@ -46,16 +46,30 @@
                     <div class="card-body">
                         <h5 class="card-title" id="card-title"></h5>
                         <p class="card-text"></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <button type="button" id="btns" class="btn btn-primary" onclick="cardHoverShown()">Click me</button>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;" id="card-hover">
+                    <div class="card-header">
+
+                        <div class="triangle-top-right"></div>
+                        <div class="triangle-top-left"></div>
+
+                        <img src="./images.jpg" class="img-thumbnail" alt="...">
+
+                    </div>
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title" id="card-title"></h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary">Go somewhere</button>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
-
-    <!-- Testing Script file -->
-    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 
     <script src="script.js"></script>
 

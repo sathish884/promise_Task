@@ -1,4 +1,8 @@
-.col {
+.container-fluid {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,16 +32,27 @@ img {
 .triangle-top-right {
     width: 0;
     height: 0;
-    border-top: 50px solid blue;
+    border-top: 50px solid rgb(116, 116, 184);
     border-left: 50px solid transparent;
+    border-top-right-radius: 5px;
     float: right;
-    /* background-color: blue; */
 }
 
 .triangle-top-left {
     width: 0;
     height: 0;
-    border-top: 50px solid #333;
+    border-top: 50px solid blue;
     border-right: 50px solid transparent;
+    border-top-left-radius: 5px;
     float: left;
+}
+
+#btns {
+    position: relative;
+}
+
+#card-hover {
+    display: none;
+    position: absolute;
+    top: 121px;
 }
