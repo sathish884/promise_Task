@@ -8,9 +8,19 @@
     align-items: center;
 }
 
-.card-header {
+.card {
+    background: rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 8px 32px 0 rgba(238, 238, 243, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 2px solid white !important;
+}
+
+.card .card-header {
     height: 100px;
     padding: 0px !important;
+    border-bottom: 4px solid white !important;
 }
 
 .card .card-body {
@@ -19,40 +29,70 @@
     text-align: center;
 }
 
-img {
+.card .card-body .card-title {
+    color: white !important;
+    margin-bottom: 40px !important;
+}
 
+.card .card-header .img-thumbnail {
     width: 100px !important;
     height: 100px !important;
     border-radius: 100px !important;
     position: absolute;
     top: 50px;
-    left: 90px;
+    left: 150px;
 }
 
-.triangle-top-right {
+.card .card-header .triangle-top-right {
     width: 0;
     height: 0;
-    border-top: 50px solid rgb(116, 116, 184);
+    border-top: 50px solid white;
     border-left: 50px solid transparent;
     border-top-right-radius: 5px;
     float: right;
 }
 
-.triangle-top-left {
+.card .card-header .triangle-top-left {
     width: 0;
     height: 0;
-    border-top: 50px solid blue;
+    border-top: 50px solid white;
     border-right: 50px solid transparent;
     border-top-left-radius: 5px;
     float: left;
 }
 
-#btns {
-    position: relative;
+.card .card-body .row .col-6 {
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: left;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
 }
 
-#card-hover {
-    display: none;
+.card .card-body #btns-collapse {
+    position: relative;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+
+#collapseExample {
     position: absolute;
-    top: 121px;
+    top: 140px;
+}
+
+#collapseExample .card-colapse {
+    width: 25rem;
+}
+
+#collapseExample .card-colapse .card-imgs {
+    width: 100%;
+    height: 470px;
+    border: 1px solid white;
 }

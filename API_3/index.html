@@ -28,42 +28,37 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
 
-
+    <!-- Container -->
     <div class="container-fluid">
 
         <div class="row">
             <div class="col p-5">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-header">
+                <!-- Card 1 -->
+                <div class="card" style="width: 25rem;">
 
+                    <div class="card-header">
                         <div class="triangle-top-right"></div>
                         <div class="triangle-top-left"></div>
-
                         <img src="./images.jpg" class="img-thumbnail" alt="...">
-
                     </div>
-                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+
                     <div class="card-body">
                         <h5 class="card-title" id="card-title"></h5>
-                        <p class="card-text"></p>
-                        <button type="button" id="btns" class="btn btn-primary" onclick="cardHoverShown()">Click me</button>
+                        <div id="card-content" class="row"></div>
+
+                        <button class="btn btn-primary" id="btns-collapse" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Me
+                        </button>
+
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;" id="card-hover">
-                    <div class="card-header">
+                <!-- Card 2 -->
+                <div class="collapse" id="collapseExample">
+                    <div id="card-colapse" class="card card-colapse">
+                        <img class="card-imgs" src="./images.jpg" alt="...">
 
-                        <div class="triangle-top-right"></div>
-                        <div class="triangle-top-left"></div>
-
-                        <img src="./images.jpg" class="img-thumbnail" alt="...">
-
-                    </div>
-                    <!-- <img src="..." class="card-img-top" alt="..."> -->
-                    <div class="card-body">
-                        <h5 class="card-title" id="card-title"></h5>
-                        <p class="card-text"></p>
-                        <button type="button" class="btn btn-primary">Go somewhere</button>
                     </div>
                 </div>
             </div>
@@ -71,6 +66,7 @@
 
     </div>
 
+    <!-- JS file -->
     <script src="script.js"></script>
 
 </body>
